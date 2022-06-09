@@ -5,7 +5,9 @@ import { Personaje } from "./personaje.models";
 @Table({
     tableName: 'personaje_pelicula'
 })
+
 export class PersonajePelicula extends Model {
+    
     @ForeignKey(()=> Personaje)
     @Column({
         type: DataType.NUMBER
